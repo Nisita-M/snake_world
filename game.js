@@ -12,7 +12,7 @@ function main(currentTime){
         if (confirm('You lost. Press ok to restart.')) {
           window.location = 'front.html'
         }
-        return 
+        return 'front.html'
     }
 
     window.requestAnimationFrame(main)
