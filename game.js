@@ -10,9 +10,9 @@ var ele = document.getElementById('timer');
 function main(currentTime){
     if (gameOver) {
         if (confirm('You lost. Press ok to restart.')) {
-          window.location = '/'
+          window.location = 'front.html'
         }
-        return
+        return 
     }
 
     window.requestAnimationFrame(main)
