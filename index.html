@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body {
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+            height: 100vh;
+            width: 100vw;
+            display:flex;
+            align-items: center;
+            margin: 0;
+            background-color: rgb(0, 10, 10);
+        }
+    #js_timer{
+        box-sizing: border-box;
+        background-color:rgb(37, 241, 234) ;
+        border: .50vmin rgb(37, 241, 234);
+        height:90vmin;
+        width:25vmin;
+        margin: 0px;
+        padding:0;
+        align-self: center ;
+        text-align: center ;
+        justify-content: center;
+        display: grid;
+    }
+    #timer{
+        box-sizing: border-box;
+        background-color: hsl(240, 16%, 96%);
+        border: .50vmin solid rgb(255, 251, 251);
+        margin:0px auto;
+        padding: 0;
+        width: 100px;
+        height: 35px;
+
+    }
+    #game-board {
+        background-color:#ffaafb;
+        width: 90vmin;
+        height: 90vmin;
+        display: grid;
+        grid-template-rows:repeat(21,1fr);
+        grid-template-columns:repeat(21,1fr);
+        justify-content: center;
+        align-content: center;
+    }
+
+    .snake{
+        background-color: hsl(107, 75%, 45%);
+        border: .25vmin solid black;
+
+    }
+    .food{
+        background-color:hsla(58, 86%, 52%, 0.921); 
+        border: .25vmin solid black;
+
+    }
+    .home{
+        width: 100 vmin;
+        height: 100 vmin;
+        align-content: space-around;
+    }
+    #help{
+        margin:30px auto;
+        width:100px;
+    }
+    #empty{
+        background-color:rgb(0, 11, 11);
+        width: 30vmin;
+        height: 100vmin;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    #empty2{
+        background-color:rgb(0, 10, 10);
+        width: 10vmin;
+        height: 100vmin;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    #empty1{
+        background-color:rgb(0, 10, 10);
+        width: 10vmin;
+        height: 100vmin;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    #empty3{
+        background-color:rgb(0, 10, 10);
+        width: 20vmin;
+        height: 100vmin;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    </style>
+    <script src="game.js" defer type="module"></script>
+</head>
+
+<body>
+    <div id="empty"> </div>
+    <div id="empty1"></div>
+    <div id="game-board"></div>
+    <div id="js_timer">
+        <br>
+        <div id="timer">
+          00:00
+        </div>
+        <br>
+        <div id=" home">
+            <button><a href ="/front.html"><img src="https://th.bing.com/th/id/OIP.rldvifq5vcEi6oMjTDi1jgHaHX?pid=ImgDet&rs=1"alt="Home" height="100" width="100"></button></a>
+        </div>
+        <br>
+        <div id="Help">
+            <button><a href ="/help.html"><img src="https://th.bing.com/th/id/OIP.syFjmdTFmPfkCS_OplpMHwHaHa?pid=ImgDet&rs=1"alt="Help" height="100" width="100"></button></a>
+        </div>
+    </div>
+    <div id="empty2"></div>
+    <div id="empty3"></div>
+    
+    
+</body>
+</html>
